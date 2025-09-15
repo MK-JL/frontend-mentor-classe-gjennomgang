@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "young-serif";
+    src: url("YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "outfit-variable";
+    src: url("Outfit-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "outfit-variable", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bounding-box {
+
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 800px;
+    padding: 40px;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.intro-text {
+    color: grey;
+}
+
+h1,
+h2 {
+    font-family: "young-serif", Georgia, "Times New Roman", serif;
+}
+
+.prep-time {
+    background-color: #aa2ba233;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.prep-time h3 {
+    margin: 0;
+}
+
+.prep-time ul {
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.prep-time li {
+    padding-left: 30px;
+}
+
+.stock-section {
+    border-bottom: 1px solid grey;
+    padding-bottom: 40px;
+}
+
+.stock-section h2 {
+    color: brown;
+}
+
+.stock-section ul,
+.stock-section ol {
+    padding-left: 15px;
+}
+
+.stock-section li {
+    padding-left: 30px;
+    margin: 20px 0;
+}
+
+
+.stock-section li::marker {
+    color: brown;
+    font-weight: bold;
+}
+
+.nutrition-list {
+    list-style: none;
+    padding: 0 !important;
+}
+
+.nutrition-list li {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+}
+
+.nutrition-list li span {
+    width: 100%;
+}
+.nutrition-list li span:nth-child(2) {
+    font-weight: bold;
+    color: brown;
+}
+
+.nutrition-list li:last-child,
+.stock-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
