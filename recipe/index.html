@@ -12,7 +12,7 @@
 
 <body>
   <main class="bounding-box">
-      <img src="image-omelette.jpeg" alt="A fluffy omelette on a plate">
+    <img src="image-omelette.jpeg" alt="A fluffy omelette on a plate">
 
     <h1>Simple Omelette Recipe </h1>
     <p class="intro-text">
@@ -27,27 +27,31 @@
         <li> <strong>Total</strong>: Approximately 10 minutes</li>
         <li><strong>Preparation</strong>: 5 minutes</li>
         <li> <strong>Cooking</strong>: 5 minutes </li>
-      </ul>
+      </ul> 
     </div>
 
     <div class="ingredients stock-section">
-
-      <h2>
-        Ingredients
-      </h2>
+      <div class="ingredients-header">
+        <h2>Ingredients</h2>
+        <div class="portions">
+          <h4>Portions</h4>
+          <button id="minus-btn">-</button>
+          <span id="portion-count">1</span>
+          <button id="plus-btn">+</button>
+        </div>
+      </div>
 
       <ul>
-        <li>2-3 large eggs</li>
+        <li><span class="portion">2</span>-<span class="portion">3</span> large eggs</li>
         <li>Salt, to taste</li>
         <li>Pepper, to taste</li>
-        <li>1 tablespoon of butter or oil</li>
+        <li><span class="portion">1</span> tablespoon of butter or oil</li>
         <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
       </ul>
-
+<span class="portion">1</span><span class="portion">1</span><span class="portion">2</span><span class="portion">1</span><span class="portion">3</span><span class="portion">1</span>
     </div>
     <div class="stock-section">
-
-      <h2>Instructions</h2>
+        <h2>Instruction</h2>
 
       <ol>
         <li>
@@ -99,6 +103,7 @@
       </ul>
     </div>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
